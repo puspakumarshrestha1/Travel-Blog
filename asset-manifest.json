@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Travel-Blog/static/css/main.0d2789e3.css",
+    "main.js": "/Travel-Blog/static/js/main.5a48d842.js",
+    "static/js/787.8e74e8a2.chunk.js": "/Travel-Blog/static/js/787.8e74e8a2.chunk.js",
+    "index.html": "/Travel-Blog/index.html",
+    "main.0d2789e3.css.map": "/Travel-Blog/static/css/main.0d2789e3.css.map",
+    "main.5a48d842.js.map": "/Travel-Blog/static/js/main.5a48d842.js.map",
+    "787.8e74e8a2.chunk.js.map": "/Travel-Blog/static/js/787.8e74e8a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d2789e3.css",
+    "static/js/main.5a48d842.js"
+  ]
+}
