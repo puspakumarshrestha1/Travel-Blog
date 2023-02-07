@@ -1,0 +1,87 @@
+@import "breakpoints";
+
+@include xs {
+    
+    .hero-text {
+        h1, h6, p {
+            display: none;
+
+        }
+
+        .btn {
+            display: none;
+        }
+    }
+
+    .package-text {
+        p {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+    }
+    .round{
+        animation: none !important;
+        transform: none !important;
+    }
+
+}
+
+@include sm {
+    
+    .hero-text {
+        h1, h6, p {
+            display: none;
+
+        }
+
+        .btn {
+            display: none;
+        }
+        .package-text {
+            p {
+                display: none;
+            }
+    
+            button {
+                display: none;
+            }
+        }
+    }
+    .round{
+        animation: none !important;
+        transform: none !important;
+    }
+
+}
+
+@include md {
+    .hero-text {
+        h1, h6, p {
+            display: none;
+
+        }
+
+        .btn {
+            display: none;
+        }
+    }
+    .package-text {
+        p {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+    }
+}
+@include lg{
+    .hero-text{
+        p{
+            display: none;
+        }
+    }
+}

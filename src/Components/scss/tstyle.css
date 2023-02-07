@@ -1,0 +1,281 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bitter", serif;
+}
+
+.top {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.sticky {
+  width: 100%;
+  position: fixed !important;
+  z-index: 999;
+}
+
+nav {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: green;
+}
+
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .show > .nav-link:hover {
+  color: green;
+}
+
+.dropdown-item:hover {
+  background-color: #198754 !important;
+  color: white !important;
+}
+
+.hero-text {
+  color: black;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  text-align: left;
+  font-weight: 400;
+}
+.hero-text .btn:hover {
+  background-color: white;
+  color: green;
+}
+
+.h-text h1 {
+  font-weight: 600;
+  font-size: 50px;
+  padding: 15px;
+}
+.h-text span {
+  color: green;
+}
+.h-text p {
+  font-size: 20px;
+}
+
+.destination .btn {
+  display: block;
+  margin: auto;
+}
+.destination .btn:hover {
+  background-color: white;
+  color: green;
+}
+
+.tbox {
+  background: whitesmoke;
+}
+.tbox .overflow {
+  overflow: hidden;
+}
+.tbox .overflow img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tbox .overflow img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.tbox a {
+  text-decoration: none !important;
+  color: black;
+  text-align: center;
+}
+.tbox a:hover {
+  color: green;
+}
+.tbox img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tour {
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+.tour .a {
+  grid-column: 1/3;
+}
+.tour .b {
+  grid-column: 2/4;
+}
+
+.main-package {
+  position: relative;
+}
+.main-package .package {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://th.bing.com/th/id/R.44fd3c17e0623d0a5711b4980bd048df?rik=kL0Cxegd%2fogOjQ&pid=ImgRaw&r=0);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://th.bing.com/th/id/R.44fd3c17e0623d0a5711b4980bd048df?rik=kL0Cxegd%2fogOjQ&pid=ImgRaw&r=0);
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-package .package .circle {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  position: relative;
+  top: 5%;
+  border-radius: 50%;
+  margin: auto;
+}
+.main-package .package .circlebtn {
+  position: absolute;
+  left: 32%;
+  top: 22%;
+  font-size: 40px;
+}
+.main-package .package .circle::after,
+.main-package .package .circle::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid rgb(0, 246, 0);
+  border-radius: 50%;
+}
+.main-package .package .circle::after {
+  -webkit-animation: rip 2s infinite;
+          animation: rip 2s infinite;
+}
+.main-package .package .circle::before {
+  -webkit-animation: rip 2s 1s infinite;
+          animation: rip 2s 1s infinite;
+}
+@-webkit-keyframes rip {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+@keyframes rip {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+.main-package .package .package-text .hero-title {
+  font-size: 60px;
+}
+.main-package .package .package-text .btn:hover {
+  background: white;
+  color: green;
+}
+
+.hotels .btn:hover {
+  background-color: white;
+  color: green;
+}
+
+.hotel-title span {
+  color: #198754;
+}
+
+.emails .round {
+  -webkit-animation: ani 12s infinite linear;
+          animation: ani 12s infinite linear;
+}
+@-webkit-keyframes ani {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes ani {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.emails input {
+  width: 300px;
+}
+.emails .btn:hover {
+  background-color: white;
+  color: green;
+}
+
+.blog {
+  line-height: 1.45;
+}
+.blog h4 {
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.partner-logo img {
+  width: 110px !important;
+}
+
+.top .top-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  padding: 10px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  display: none;
+  z-index: 100000;
+}
+.top .top-btn a {
+  color: green;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
+
+.end ul {
+  list-style: none;
+}
+.end ul h5 a {
+  text-decoration: none;
+  line-height: 2.25;
+  color: white;
+}
+.end ul li a {
+  text-decoration: none;
+  line-height: 2.25;
+  color: white;
+}/*# sourceMappingURL=tstyle.css.map */
